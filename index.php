@@ -1,3 +1,6 @@
+<?php include 'config/config.php';?>
+<?php include 'libraries/database.php';?>
+<?php include 'include/header.php';?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -44,7 +47,7 @@
 
       <div class="blog-header">
           <div class="logo"><img src="images/php5.png"/></div>
-        <h1 class="blog-title">The Bootstrap Blog</h1>
+        <h1 class="blog-title">Php Lovers</h1>
         <p class="lead blog-description">Php5 Lovers: Tutorial Videos and More</p>
       </div>
 
