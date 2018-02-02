@@ -15,7 +15,6 @@
 
 
 
-
           <div class="blog-post">
             <h2 class="blog-post-title">Php Lovers Blog 1</h2>
             <p class="blog-post-meta">January 1, 2014 by <a href="#">Mark</a></p>
