@@ -1,7 +1,22 @@
+<?php include 'config/config.php';?>
 <?php include 'include/header.php';?>
+<?php include 'libraries/database.php';?>
+<?php 
+  //Create DB Object
+    $db = new Database();
+
+    //Creat query
+    $query = "SELECT * FROM posts";
+
+    //Run query 
+    $post = $db->select($query);
+
+?>
+<?php if($post) : ?>
+  <?php while($row = $post->fetch_assoc()) : ?>
 
 <div class="blog-post">
-            <h2 class="blog-post-title">Php Lovers Post1</h2>
+            <h2 class="blog-post-title"><?php echo $row['title'];?></h2>
             <p class="blog-post-meta">January 1, 2014 by <a href="#">Mark</a></p>
 
             <p>This blog post shows a few different types of content that's supported and styled with Bootstrap. Basic typography, images, and code are all supported.</p>
@@ -16,5 +31,11 @@
           
             
           </div><!-- /.blog-post -->
+          <?php endwhile; ?>
+
+<?php else : ?>
+    <p>There are no Posts</p>
+
+<?php endif; ?>
 
 <?php include 'include/footer.php';?>
