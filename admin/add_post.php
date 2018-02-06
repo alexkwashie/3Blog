@@ -8,7 +8,7 @@
    
   <div class="form-group">
     <label>Post Body</label>
-    <textarea name="body" class="form-control" rows="3" placeholder="Enter Text" noresize></textarea>
+    <textarea name="body" class="form-control" rows="3" placeholder="Enter Text"></textarea>
   </div>
 
   <div class="form-group">

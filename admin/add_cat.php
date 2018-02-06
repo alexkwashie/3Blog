@@ -7,6 +7,8 @@
   </div>
 <div>
   <button name="submit" type="submit" class="btn btn-default">Submit</button>
+
+  <a href="index.php" class="btn btn-primary">Cancel</a>
 </form>
 </div>
 <br>

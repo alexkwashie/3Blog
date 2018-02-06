@@ -33,6 +33,8 @@
   <button type="submit" name="submit" class="btn btn-success">Submit</button>
 
   <a href="index.php" class="btn btn-primary">Cancel</a> 
+
+  <input name="Delete" type="submit" class="btn btn-dander" value="Delete">
   </div>
   <br>
 </form>

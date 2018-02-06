@@ -34,8 +34,8 @@
       <div class="container">
         <nav class="blog-nav">
           <a class="blog-nav-item active" href="index.php">Dashboard</a>
-          <a class="blog-nav-item" href="posts.php">Add Post</a>
-          <a class="blog-nav-item" href="posts.php">Add Category</a>
+          <a class="blog-nav-item" href="add_post.php">Add Post</a>
+          <a class="blog-nav-item" href="add_cat.php">Add Category</a>
           <a class="blog-nav-item pull-right" href="http:://localhost/index.php">Visit Blog</a>
         </nav>
       </div>
