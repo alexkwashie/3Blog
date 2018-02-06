@@ -43,7 +43,7 @@
 
     <div class="container">
 
-      <div class="blog-header col-sm-12">
+      <div class="blog-header">
           <h2>Admin Area</h2>
       </div>
 

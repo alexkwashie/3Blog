@@ -1,12 +1,17 @@
 
 
-<div class="blog-footer">
-  <p>PhpBlog <a href="http://getbootstrap.com">Php7</a> by <a href="https://twitter.com/mdo">@alexkwashie</a>.</p>
-  <p>
-    <a href="#">Back to top</a>
-  </p>
-</div>
+</div><!-- /.blog-sidebar -->
 
+      </div><!-- /.row -->
+
+    </div><!-- /.container -->
+
+    <footer class="blog-footer">
+      <p>PhpBlog <a href="http://getbootstrap.com">Php7</a> by <a href="https://twitter.com/mdo">@alexkwashie</a>.</p>
+      <p>
+        <a href="#">Back to top</a>
+      </p>
+    </footer>
 
 <!-- Bootstrap core JavaScript
 ================================================== -->
