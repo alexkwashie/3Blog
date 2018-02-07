@@ -1,5 +1,18 @@
 <?php include 'include/header.php';?>
 
+<?php
+
+//Create database
+$db = new Database;
+
+//Create query
+$query = "SELECT * FROM posts";
+
+//Run Query 
+$post= $db->select($query);
+
+?>
+
 <!--Content Here-->
 <table class="table table-striped ">
 <tr>
@@ -10,12 +23,15 @@
     <th>Date</th>
 </tr>
 
+
 <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+<?php while($row=$post->fetch_assoc()) :?>
+    <td><?php echo $row['id'];?></td>
+    <td><a href="edit_post.php?id=<?php echo $row['id'];?>"><?php echo $row['title'];?></td>
+    <td><?php echo $row['name'];?></td>
+    <td><?php echo $row['author'];?></td>
+    <td><?php echo formatDate($row['date']);?></td>
+<?php endwhile;?>
 </tr>
 
 </table>
