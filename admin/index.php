@@ -1,3 +1,4 @@
+
 <?php include 'include/header.php';?>
 
 <?php
@@ -6,7 +7,9 @@
 $db = new Database;
 
 //Create query
-$query = "SELECT * FROM posts";
+$query = "SELECT posts.*, categories.name FROM posts
+            INNER JOIN catergories 
+            ON post.category = categories.id";
 
 //Run Query 
 $post= $db->select($query);

@@ -1,5 +1,5 @@
-
-
+<?php include '../config/config.php';?>
+<?php include '../libraries/database.php';?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
