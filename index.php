@@ -9,8 +9,15 @@
     //Creat query
     $query = "SELECT * FROM posts";
 
-    //Run query 
+    //Run query
     $post = $db->select($query);
+
+
+  //Creat query
+  $query = "SELECT * FROM categories";
+
+  //Run query
+  $categories = $db->select($query);
 
 ?>
 

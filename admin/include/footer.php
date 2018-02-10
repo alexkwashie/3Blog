@@ -1,6 +1,24 @@
 
 
-</div><!-- /.blog-sidebar -->
+</div>
+<div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+          <div class="sidebar-module sidebar-module-inset">
+            <h4>About</h4>
+            <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+          </div>
+          <div class="sidebar-module">
+            <h4>Categories</h4>
+            
+            <?php if ($Categories) : ?>
+            <ol class="list-unstyled">
+
+            <?php while($row = $categories->fetch_assoc) : ?> 
+              <li><a href="#">News</a></li>
+
+            <?php endwhile ?>
+              
+            </ol>
+          </div><!-- /.blog-sidebar -->
 
       </div><!-- /.row -->
 
