@@ -12,12 +12,16 @@
             <?php if ($Categories) : ?>
             <ol class="list-unstyled">
 
-            <?php while($row = $categories->fetch_assoc) : ?> 
-              <li><a href="#">News</a></li>
+            <?php while($row = $categories->fetch_assoc()) : ?> 
+              <li><a href="#"><?php echo $row['name']; ?></a></li>
 
             <?php endwhile ?>
               
             </ol>
+            <?php else : ?>
+                <p>There are no post</p>
+            <?php endif; ?>
+
           </div><!-- /.blog-sidebar -->
 
       </div><!-- /.row -->

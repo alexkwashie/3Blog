@@ -8,8 +8,8 @@ $db = new Database;
 
 //Create query
 $query = "SELECT posts.*, categories.name FROM posts
-            INNER JOIN catergories 
-            ON post.category = categories.id";
+            INNER JOIN categories 
+            ON posts.category = categories.id";
 
 //Run Query 
 $post= $db->select($query);
@@ -27,15 +27,17 @@ $post= $db->select($query);
 </tr>
 
 
-<tr>
+
 <?php while($row=$post->fetch_assoc()) :?>
+<tr>
     <td><?php echo $row['id'];?></td>
     <td><a href="edit_post.php?id=<?php echo $row['id'];?>"><?php echo $row['title'];?></td>
     <td><?php echo $row['name'];?></td>
     <td><?php echo $row['author'];?></td>
     <td><?php echo formatDate($row['date']);?></td>
+    </tr>
 <?php endwhile;?>
-</tr>
+
 
 </table>
 
